@@ -1,0 +1,138 @@
+﻿@model Pharma.Models.MedicineListModel
+@using Microsoft.AspNetCore.Identity;
+@using Pharma.Areas.Identity.Data;
+@inject UserManager<ApplicationUser> UserManager;
+@inject SignInManager<ApplicationUser> SignInManager;
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Medicines</h1>
+
+
+@if (!SignInManager.IsSignedIn(User))
+{
+    Context.Response.Redirect("/Identity/Account/Login");
+}
+
+
+    @if (User.IsInRole("Admin"))
+    {
+       <h3>You can add a new medicine</h3>
+       <p><a asp-area="" asp-controller="Medicines" asp-action="Create" class="btn btn-primary"> Add a Medicine</a></p>
+    }
+    else
+    {
+      
+        <p><a asp-area="" asp-controller="Requests" asp-action="Create" class="btn btn-primary"> Add A Medicine Request</a></p>
+    }
+<p>
+    
+</p>
+<form asp-controller="Medicines" asp-action="Index" method="get">
+    <p>
+        Medicine Type: <select asp-for="MedicineType" asp-items="Model.MedicineList" class="form-select">
+            <option value=""> All</option>
+        </select>
+        <br />
+        Search for Medicine:  <input type="text" asp-for="searchString" class="form-control"/>
+        <br />
+
+        <input type="submit" value="Filter" class="btn btn-primary"/>
+    </p>
+</form>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Medicines[0].Medicine_Name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Medicines[0].Medicine_Type)
+            </th>
+            @if (User.IsInRole("Admin"))
+            {   
+            <th>
+                @Html.DisplayNameFor(model => model.Medicines[0].Medicine_Reg_Number)
+            </th>
+            }
+            <th>
+                @Html.DisplayNameFor(model => model.Medicines[0].Medicine_Size)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Medicines[0].Medicine_Unit)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Medicines[0].Medicine_Form)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Medicines[0].Medicine_Qty)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Medicines[0].Medicine_Price)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Medicines[0].Medicine_Expiry_Date)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model.Medicines) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Medicine_Name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Medicine_Type)
+            </td>
+                @if (User.IsInRole("Admin"))
+                {
+                <td>
+                @Html.DisplayFor(modelItem => item.Medicine_Reg_Number)
+            </td>
+                    
+                }
+            <td>
+                @Html.DisplayFor(modelItem => item.Medicine_Size)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Medicine_Unit)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Medicine_Form)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Medicine_Qty)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Medicine_Price)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Medicine_Expiry_Date)
+            </td>
+            <td>
+                    @if (User.IsInRole("Admin"))
+                    {
+
+
+                        <a asp-action="Edit" asp-route-id="@item.Medicine_Id" class="btn btn-primary">Edit</a>
+                    }
+                    
+                    <a asp-action="Details" asp-route-id="@item.Medicine_Id" class="btn btn-primary">Details</a> 
+                    
+                 @if (User.IsInRole("Admin"))
+                    {
+
+                        <a asp-action="Delete" asp-route-id="@item.Medicine_Id" class="btn btn-primary">Delete</a>
+                    }
+                </td>
+        </tr>
+}
+    </tbody>
+</table>
+<br />
+<br />
+
