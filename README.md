@@ -1,7 +1,7 @@
 
 <div id="top"></div>
 
-  <h3 align="center">PharmacyApp </h3>
+  <h3 align="center">Pharmacy App </h3>
 
 ## Description
 
@@ -19,9 +19,16 @@ This project was done for a university course (New Generation Programming Langua
 
 ## Getting Started
 
+### Main Features:
+* Multi-User & Client-Server input validation!
+* Identity & Login
+* Authentication & Authorization
+* MVC Design
+* Search & Filter
+
 ### Screens
 <figure>
-  <figcaption>Sign Up</figcaption>
+  <figcaption>Sign In</figcaption>
 <img src="reg.png" alt="Logo" width="500" height="300">
 </figure>
 <figure>
@@ -29,19 +36,19 @@ This project was done for a university course (New Generation Programming Langua
 <img src="home.png" alt="Logo" width="500" height="300">
 </figure>
 <figure>
-  <figcaption>Medicine Admin View</figcaption>
+  <figcaption>•	An admin can add medicines and manage them (edit/ details/delete)</figcaption>
 <img src="med-admin.png" alt="Logo" width="500" height="300">
 </figure>
 <figure>
-  <figcaption>Medicine Request Admin View</figcaption>
+  <figcaption>Requests</figcaption>
 <img src="req-admin.png" alt="Logo" width="500" height="300">
 </figure>
 <figure>
-  <figcaption>Medicine Request Detail</figcaption>
+  <figcaption>Admin can see all the request that were made from the user/client as well as click on the details next to a request to be able to add an order for that specific request</figcaption>
 <img src="req-detail.png" alt="Logo" width="500" height="300">
 </figure>
 <figure>
-  <figcaption>Medicine Medicine User View</figcaption>
+  <figcaption>A user can browser and see the different available medicines, as well as create a request for a medicine by clicking on the button under the medicine title </figcaption>
 <img src="med-user.png" alt="Logo" width="500" height="300">
 </figure>
 
