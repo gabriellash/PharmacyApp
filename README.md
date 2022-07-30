@@ -21,12 +21,12 @@ This project was done for a university course (New Generation Programming Langua
 
 ### Screens
 <figure>
-  <figcaption>Student Homepage</figcaption>
-<img src="homepage.PNG" alt="Logo" width="300" height="500">
+  <figcaption>Sign Up</figcaption>
+<img src="reg.PNG" alt="Logo" width="300" height="500">
 </figure>
 <figure>
-  <figcaption>Category screen</figcaption>
-<img src="ccc.PNG" alt="Logo" width="300" height="500">
+  <figcaption>Homapage screen</figcaption>
+<img src="home.PNG" alt="Logo" width="300" height="500">
 </figure>
 <figure>
   <figcaption>Enroll course screen</figcaption>
