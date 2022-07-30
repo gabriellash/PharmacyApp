@@ -26,15 +26,23 @@ This project was done for a university course (New Generation Programming Langua
 </figure>
 <figure>
   <figcaption>Homapage screen</figcaption>
-<img src="home.png" alt="Logo" width="500" height="300">
+<img src="home.png" alt="Logo" width="300" height="500">
 </figure>
 <figure>
   <figcaption>Medicine Admin View</figcaption>
-<img src="med-admin.PNG" alt="Logo" width="500" height="300">
+<img src="med-admin.png" alt="Logo" width="300" height="500">
 </figure>
 <figure>
-  <figcaption>Instuctor Homepage</figcaption>
-<img src="kk.PNG" alt="Logo" width="300" height="500">
+  <figcaption>Medicine Request Admin View</figcaption>
+<img src="request-admin.png" alt="Logo" width="300" height="500">
+</figure>
+<figure>
+  <figcaption>Medicine Request Detail</figcaption>
+<img src="request-detail.png" alt="Logo" width="300" height="500">
+</figure>
+<figure>
+  <figcaption>Medicine Medicine User View</figcaption>
+<img src="medicine-user.png" alt="Logo" width="300" height="500">
 </figure>
 
 
@@ -45,7 +53,7 @@ This project was done for a university course (New Generation Programming Langua
 * Database: Microsoft SQL server
 
 
-## Getting Started
+## Conclusion
 * In conclusion, a Pharmacy Application is a good solution for the difficulties that were addressed through the proposed system of this study, especially in this pandemic condition where going to places has been harder than before. 
 * Although the requirements model for the app has been successfully implemented, there is still room for improvements. 
 * At present, the prototype does not have fully functional requirements for enhancing the pharmacy environment, like a prescription section that allows the admin/pharmacist to prescribe medicines for the customers.
