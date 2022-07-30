@@ -26,23 +26,23 @@ This project was done for a university course (New Generation Programming Langua
 </figure>
 <figure>
   <figcaption>Homapage screen</figcaption>
-<img src="home.png" alt="Logo" width="300" height="500">
+<img src="home.png" alt="Logo" width="500" height="300">
 </figure>
 <figure>
   <figcaption>Medicine Admin View</figcaption>
-<img src="med-admin.png" alt="Logo" width="300" height="500">
+<img src="med-admin.png" alt="Logo" width="500" height="300">
 </figure>
 <figure>
   <figcaption>Medicine Request Admin View</figcaption>
-<img src="request-admin.png" alt="Logo" width="300" height="500">
+<img src="req-admin.png" alt="Logo" width="500" height="300">
 </figure>
 <figure>
   <figcaption>Medicine Request Detail</figcaption>
-<img src="request-detail.png" alt="Logo" width="300" height="500">
+<img src="req-detail.png" alt="Logo" width="500" height="300">
 </figure>
 <figure>
   <figcaption>Medicine Medicine User View</figcaption>
-<img src="medicine-user.png" alt="Logo" width="300" height="500">
+<img src="med-user.png" alt="Logo" width="500" height="300">
 </figure>
 
 
