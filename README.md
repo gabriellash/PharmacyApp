@@ -26,11 +26,11 @@ This project was done for a university course (New Generation Programming Langua
 </figure>
 <figure>
   <figcaption>Homapage screen</figcaption>
-<img src="home.png" alt="Logo" width="500" height="5300">
+<img src="home.png" alt="Logo" width="500" height="300">
 </figure>
 <figure>
-  <figcaption>Enroll course screen</figcaption>
-<img src="enroll.PNG" alt="Logo" width="300" height="500">
+  <figcaption>Medicine Admin View</figcaption>
+<img src="med-admin.PNG" alt="Logo" width="500" height="300">
 </figure>
 <figure>
   <figcaption>Instuctor Homepage</figcaption>
