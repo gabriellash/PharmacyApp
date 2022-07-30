@@ -22,11 +22,11 @@ This project was done for a university course (New Generation Programming Langua
 ### Screens
 <figure>
   <figcaption>Sign Up</figcaption>
-<img src="reg.PNG" alt="Logo" width="300" height="500">
+<img src="reg.png" alt="Logo" width="500" height="300">
 </figure>
 <figure>
   <figcaption>Homapage screen</figcaption>
-<img src="home.PNG" alt="Logo" width="300" height="500">
+<img src="home.png" alt="Logo" width="500" height="5300">
 </figure>
 <figure>
   <figcaption>Enroll course screen</figcaption>
